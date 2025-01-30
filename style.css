@@ -55,7 +55,7 @@ header nav li a:visited {
 header nav li {
     display: inline;
     margin-left: 16px;
-    font-size: 32px;
+    font-size: 1.5rem;
 }
 
 header nav li a {
@@ -155,7 +155,6 @@ footer {
 
 /* Estilo para artigos e logo */
 
-
 article {
     display: flex;
     flex-direction: column;
@@ -185,6 +184,10 @@ article img {
 }
 
 /* Estilo de texto */
+
+header h1{
+    font-size: 3vw;
+}
 
 #about h2, #about p, section h2, section h3, section p {
     margin-bottom: 16px;
