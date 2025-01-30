@@ -17,6 +17,10 @@ body {
     font-size: x-large;
 }
 
+main {
+    flex-grow: 1;
+}
+
 /* Estilos de contêiner e layout */
 
 .container {
@@ -64,10 +68,11 @@ header .container, section .container {
     justify-content: space-between;
     max-width: 80vw; 
     flex-wrap: wrap;
+    align-items: center;  
 }
 
 section .container {
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 section {
@@ -152,8 +157,12 @@ footer {
 
 
 article {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 30%;
+    min-width: 250px;
 }
 
 article h3 {
