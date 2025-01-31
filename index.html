@@ -12,29 +12,22 @@
     <title>Marcelo Rocha</title>
 </head>
 <body>
-    <div class="wrapper">            
-        <header>
-            <h1>Marcelo Rocha</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">Sobre mim</a>
-                    </li>
-                    <li>
-                        <a href="#sports">Esportes</a>
-                    </li>  
-                    <li>
-                        <a href="#forfun">Diversão</a>
-                    </li>  
-                    <li>
-                        <a href="#passion">Paixões</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>                
-                </ul>
-            </nav>
-        </header>
+    <div class="wrapper">  
+        <div class="header">
+            <header >
+                <h1 id="home">Marcelo Rocha</h1>
+            </header>
+        </div>
+        <div class="navbar">
+            <nav>               
+                <a href="#about">Sobre mim</a>                   
+                <a href="#sports">Esportes</a>                    
+                <a href="#forfun">Diversão</a>                   
+                <a href="#passion">Paixões</a>                    
+                <a href="#contact">Contato</a>
+                <a href="#home" id="topo">Topo</a>    
+            </nav> 
+        </div>                                 
         <main>
             <section id="about">
                 <div class="container">
@@ -44,7 +37,7 @@
                                 <p>Eu gosto de praticar jiu-jitsu e frequentar a academia para manter a forma. Tenho uma paixão por carros tunados e adoro passar horas jogando PC, Xbox ou Playstation. Também sou fã de Magic: The Gathering, onde estratégia e diversão se encontram. Nadar em mar aberto é uma das minhas atividades favoritas, proporcionando uma sensação de liberdade e conexão com a natureza. Além disso, sou apaixonado por chow-chows, esses cães encantadores que têm um lugar especial no meu coração. Sou louco por imagens geradas por IA e Meu objetivo profissional é me tornar um desenvolvedor full-stack, unindo todas essas paixões em uma vida cheia de desafios e realizações.</p>
                                 <p>Aqui estão um pouco das coisas que me interessam:</p>
                                     <div class="icontainer">
-                                        <ul class="icon-list" id="small_icons">
+                                        <ul class="icon-list" id="upper_icons">
                                             <li><img src="./images/bjj01.png" alt="Jiu-Jitsu"></li>
                                             <li><img src="./images/workout01.png" alt="Academia"></li>
                                             <li><img src="./images/ferrari.png" alt="Ferrari"></li>
@@ -145,7 +138,7 @@
                     </div>    
                         <div class="social-media">
                             <h3>Aonde me encontrar</h3>
-                            <ul class="social-list">
+                            <ul class="social-list" id="lower_icons">
                                 <li><a href="https://www.instagram.com/mrmarcelorocha/" title="Me segue no Instagram" target="_blank"><img src="./images/instagram.png" alt="Instagram"></a></li>
                                 <li><a href="https://x.com/moferapontotxt" title="Segue lá no X" target="_blank"><img src="./images/xlogo.png" alt="X ex Twitter"></a></li>
                                 <li><a href="https://www.youtube.com/@MotorideTube" title="YouTube" target="_blank"><img src="./images/youtube2.png" alt="Canal sem conteúdo"></a></li>
@@ -160,11 +153,9 @@
             </section>
         </main>
         <footer id="footer">
-            <div class="container">
                 <p>
                     &copy; Marcelo Rocha - Todos os Direitos Reservados - 2024
                 </p>
-            </div>
         </footer> 
     </div>   
 </body>

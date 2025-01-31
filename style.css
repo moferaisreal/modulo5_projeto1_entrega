@@ -1,103 +1,64 @@
 /* Estilos gerais */
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 body {
-    min-height: 100vh;
     font-family: "Geo", serif;
-    font-size: x-large;
 }
 
-main {
-    flex-grow: 1;
-}
+/* Estilos de contêiner */
 
-/* Estilos de contêiner e layout */
-
-.container {
-    margin: 0 auto; 
-    height: 100%;
-}
-
-header { 
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+.header {
     background-color: #5d16a0;
     color: #f5dd54;
-    padding: 16px 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto; 
-    box-shadow: 0 4px 2px -2px gray;
-    height: 1.2%;
+    font-size: clamp(2rem, 2.5vw , 7rem);
+    text-align: center;
 }
 
-header nav li a:hover {
-    color: #f7d725;
-    text-decoration: underline;
+.navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #5d16a0;
+    display: block;
 }
 
-header nav li a:visited {
-    color: #c2a501;
-    text-decoration: none;
-}
-header nav li {
-    display: inline;
-    margin-left: 16px;
-    font-size: 1.5rem;
-}
-
-header nav li a {
+.navbar a{
+    float: left;
     color: #f5dd54;
     text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: clamp(0.9rem, 1.5vw, 4rem);
+    
 }
 
-header .container, section .container {
+.container {
     display: flex;
+    margin: 0 auto; 
+    height: 100%;
+    align-content: flex-end;
     justify-content: space-between;
-    max-width: 80vw; 
     flex-wrap: wrap;
-    align-items: center;  
+    align-items: center;
 }
 
-section .container {
-    align-items: flex-end;
+#about .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 section {
-    padding: 24px 0;    
-    color: #f0e6ff;
-    min-height: calc(100vh - 70px - 50px);
-    font-size: larger;
-}
-
-form textarea {
-    resize: none;
-    height: 120px;
+    padding: 20px 0;
 }
 
 #contact .container {
     display: block;
-}
-
-#about .container {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    max-width: 80vw; 
-    margin: auto;
 }
 
 footer {
@@ -109,19 +70,49 @@ footer {
     text-align: center;
 }   
 
-.contact-form {
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 30%;
+}
+
+.contact-form {
+    width: 40%;
 }
 
 .social-media{
-    width: 30%;
+    width: 40%;
 }
 
-#contact .container {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-    align-content: flex-end;
+.icontainer{
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Estilo dos ícones */
+
+#upper_icons img, #lower_icons img{
+    height: clamp(50px, 20vh, 100px); 
+    width: fit-content ;
+}
+
+/* Estilos diversos */
+
+.navbar a:hover{
+    color: #f5dd54;
+    text-decoration: underline;
+    background-color:#9a8faa
+}
+
+.navbar a:visited{
+    color: #c2a501;
+    text-decoration: none;
+}
+
+#topo{
+    float: right;
 }
 
 /* Background para seções */
@@ -154,185 +145,30 @@ footer {
     background-image: url(./images/bground_contact.jpg);
 }
 
-/* Estilo para artigos e logo */
-
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 30%;
-    min-width: 250px;
-}
-
-article h3 {
-    padding: 10px;
-    width: 100%;
-    z-index: 2;
-}
-
-article img {
-    padding: 0 1%;
-    max-width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-#about .logo {
-    width: 40%; 
-    margin-right: 20px;
-}
-
-/* Estilo de texto */
-
-header h1{
-    font-size: 3vw;
-}
-
-#about h2, #about p, section h2, section h3, section p {
-    margin-bottom: 16px;
-}
-
-#about h2 {
-    color: #7a28c5;
-    font-size: 3vw;
-}
-
-#about p {
-    font-size: 1.2vw;
-}
+/* Estilos de Texto */
 
 section h2 {
-    color: #d8c1ec;
-    font-size: 3vw;
-    display: block;
-    width: 100%;    
-}
-
-#contact h2 {
-    color: #f5dd54;
-    font-size: 3vw;
-}
-
-#contact h3 {
+    font-size: clamp(2rem, 3vw, 5rem);
     color: #7a28c5;
-}
-
-header, section h2, section h3, form button {
-    font-family: "Audiowide", serif;
-    font-weight: normal;
-}
-
-body, input, textarea {
-    font-family: "Geo", serif;
-    font-size: x-large;
 }
 
 section h3 {
-    font-size: xxx-large;
-    margin-top: 10px;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    color: #f0e6ff;
 }
 
 section p {
-    font-size: xx-large;
+    font-size: clamp(1rem, 1vw, 2rem);
+    line-height: 1.5;
 }
 
-.about-container{
-    flex: 1;
+/* Estilos de imagens */
+
+#about .logo{
+    width: 50%;
+}
+section img {
+    object-fit: fit-content;
+    width: 100%;
 }
 
-/* Estilo dos ícones */
-
-.icon-list img, .social-list img {
-    height: 92px;
-}
-
-.social-list li, .icon-list li {
-    display: inline;
-    margin-right: 8px;
-}
-
-.social-list li a {
-    text-decoration: none;
-}
-
-/* Formulários */
-
-form input, form textarea, form button{
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px 
-}
-
-
-form button {
-    background-color: #5d16a0;
-    color: #f5dd54;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #bc83f1;
-}
-
-input:focus, textarea:focus {
-    outline-color: #bc83f1;
-}
-
-/* Responsividade */
-
-@media only screen and (max-width: 1027px) {
-    header .container, section .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .logo {
-        margin-bottom: 16px;
-        margin-right: 0;
-    }
-    
-    .contact-form {
-        flex-direction: column;
-    }
-    
-    form input, form textarea, form button {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    header nav li {
-        display: block;
-        margin: 8px 0;
-    }
-    
-    .brands-list img, .social-list img {
-        height: 18px;
-    }
-    
-    .brands-list li, .social-list li {
-        margin-bottom: 8px;
-    }
-    
-    section h2, section h3 {
-        font-size: 20px;
-    }
-
-    section p {
-        font-size: 6vw;
-    }
-}
-/*Imagens*/
-
-.logo {
-    margin-right: 32px;
-}
-
-.icontainer {
-    height: 48px;
-    margin-right: 8px;
-}
