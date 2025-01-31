@@ -195,18 +195,28 @@ header h1{
 }
 
 #about h2 {
-    font-size: 2vw;
+    color: #7a28c5;
+    font-size: 3vw;
 }
 
 #about p {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 section h2 {
-    color: #7a28c5;
-    font-size: 2vw;
+    color: #d8c1ec;
+    font-size: 3vw;
     display: block;
     width: 100%;    
+}
+
+#contact h2 {
+    color: #f5dd54;
+    font-size: 3vw;
+}
+
+#contact h3 {
+    color: #7a28c5;
 }
 
 header, section h2, section h3, form button {
